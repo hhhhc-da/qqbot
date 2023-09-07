@@ -112,7 +112,7 @@ choose one fit your OS and unpatch it.
 choose 'ws-socket' (code: 3)
 
 Edit your config.yml
-
+{
     account: # 账号相关
       uin: 350XXXXYYY # QQ账号                      # Here need to fix with your QQ account
       password: 'password' # 密码为空时使用扫码登录    # Here need to fix with your QQ password
@@ -152,6 +152,7 @@ Edit your config.yml
           reconnect-interval: 3000
           middlewares:
             <<: *default # 引用默认中间件
+}
 
 OKKK, we can use it by this command:
 
