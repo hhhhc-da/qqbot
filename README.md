@@ -1,7 +1,7 @@
-## QQbot README.md
+# QQbot README.md
 Help you easily create a bot with 3 repository.
 
-# Prepare a bot's source code
+## Prepare a bot's source code
 Such as mai-bot:
 
 `
@@ -54,7 +54,7 @@ OK, we can use it by this command:
   (qqbot)root@user:/home/user/bot/maibot# python bot.py
 `
 
-# Get qsign to set up a sign server
+## Get qsign to set up a sign server
 In this README, qsign version is 1.1.9 
 
 ('qsign' & 'go-cqhttp' version must be matching!!! Otherwise you will return 'Code: 45')
@@ -125,7 +125,7 @@ OKK, we can use it by this command:
 
 (It's okay with graphic interface, try double click it.)
 
-# Download go-cqhttp
+## Download go-cqhttp
 
 `
 https://github.com/1umine/go-cqhttp/actions/runs/5861714722
@@ -188,7 +188,7 @@ OKKK, we can use it by this command:
   root@user:/home/user/bot/gocq# ./gocq
 `
 
-# Start your bot
+## Start your bot
 
 First, start qsign
 
