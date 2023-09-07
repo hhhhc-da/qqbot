@@ -108,7 +108,13 @@ It's look like:
     }
 ```
 
-Change host, such as ' "host": "127.0.0.1", ' to protect your server.
+Change host, such as 
+
+```
+"host": "127.0.0.1", 
+```
+
+to protect your server.
 
  - Write a start shell program like:
 
