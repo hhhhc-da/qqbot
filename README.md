@@ -14,9 +14,9 @@ To start 'bot.py',you need a python interpreter first.
 
 Use Chrome to open this link & download Anaconda and install.
 
-{
+`
 https://www.anaconda.com/download#downloads
-}
+`
 
 (My OS is Debian aarch64(ARM64), please check your OS)
 
@@ -24,35 +24,35 @@ In shell/powershell/cmd:
 
 ('Ctrl+Alt+T' on Linux or 'menu+R' -> 'cmd' -> 'Enter' on Windows)
 
-{
+`
   root@user:/home/user/# conda create -n qqbot python=3.9
-}
+`
 
 (If you cannot use 'conda',please 'source ~/.bashrc' on Linux or check your Environment variable set on Windows)
 
 Start python environment ( version: 3.9.x ).
 
-{
+`
   root@user:/home/user/# conda activate qqbot
-}
+`
 
 Now ,your shell become this:
 
-{
+`
   (qqbot)root@user:/home/user/# 
-}
+`
 
 Install python libs by using 'pip':
 
-{
+`
   (qqbot)root@user:/home/user/# pip install -r requirment.txt
-}
+`
 
 OK, we can use it by this command:
 
-{
+`
   (qqbot)root@user:/home/user/bot/maibot# python bot.py
-}
+`
 
 # Get qsign to set up a sign server
 In this README, qsign version is 1.1.9 
@@ -61,7 +61,7 @@ In this README, qsign version is 1.1.9
 
 Download qsign with this link:
 
-{
+`
  - plan A:
 
     https://github.com/fuqiuluo/unidbg-fetch-qsign/releases/tag/1.1.9
@@ -75,17 +75,17 @@ Download qsign with this link:
     (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
 
       root@user:/home/user/bot/qsign# ./gradlew build
-}
+`
 
 
 After this step, it become easy.
 
-{
+`
   root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
-}
+`
 
 It's look like:
-
+`
     {
       "server": {
         "host": "0.0.0.0",
@@ -105,41 +105,42 @@ It's look like:
         "debug": false
       }
     }
+`
 
 Change host, such as ' "host": "127.0.0.1", ' to protect your server.
 
 Write a start shell program like:
 
-{
+`
   root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
-}
+`
 
 (or make a new 'txt' file and write 'start bin/unidbg-fetch-qsign.bat --basePath=txlib/8.9.63' then change filename to 'start.bat' on Windows, and you can execute it by double click it)
 
 OKK, we can use it by this command:
 
-{
+`
   root@user:/home/user/bot/qsign# bash start.sh
-}
+`
 
 (It's okay with graphic interface, try double click it.)
 
 # Download go-cqhttp
 
-{
+`
 https://github.com/1umine/go-cqhttp/actions/runs/5861714722
-}
+`
 
 choose one fit your OS and unpatch it.
 
-{
+`
     root@user:/home/user/bot/gocq# chmod -R 755 gocq && ./gocq
-}
+`
 
 choose 'ws-socket' (code: 3)
 
 Edit your config.yml
-{
+`
     account: # 账号相关
       uin: 350XXXXYYY # QQ账号                      # Here need to fix with your QQ account
       password: 'password' # 密码为空时使用扫码登录    # Here need to fix with your QQ password
@@ -160,32 +161,32 @@ Edit your config.yml
       # 可选: string,array
       post-format: array                            # Here need to fix by your bot's README
       ...
-    servers:
-      # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
-      #- http: # http 通信
-      #- ws:   # 正向 Websocket
-      #- ws-reverse: # 反向 Websocket
-      #- pprof: #性能分析服务器
-      # 反向WS设置
-      - ws-reverse:
-          # 反向WS Universal 地址
-          # 注意 设置了此项地址后下面两项将会被忽略
-          universal: ws://127.0.0.1:10219/onebot/v11/ws    # Here need to fix by your bot's README
-          # 反向WS API 地址
-          api: ws://your_websocket_api.server
-          # 反向WS Event 地址
-          event: ws://your_websocket_event.server
-          # 重连间隔 单位毫秒
-          reconnect-interval: 3000
-          middlewares:
-            <<: *default # 引用默认中间件
-}
+  servers:
+    # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
+    #- http: # http 通信
+    #- ws:   # 正向 Websocket
+    #- ws-reverse: # 反向 Websocket
+    #- pprof: #性能分析服务器
+    # 反向WS设置
+    - ws-reverse:
+        # 反向WS Universal 地址
+        # 注意 设置了此项地址后下面两项将会被忽略
+        universal: ws://127.0.0.1:10219/onebot/v11/ws    # Here need to fix by your bot's README
+        # 反向WS API 地址
+        api: ws://your_websocket_api.server
+        # 反向WS Event 地址
+        event: ws://your_websocket_event.server
+        # 重连间隔 单位毫秒
+        reconnect-interval: 3000
+        middlewares:
+          <<: *default # 引用默认中间件
+`
 
 OKKK, we can use it by this command:
 
-{
+`
   root@user:/home/user/bot/gocq# ./gocq
-}
+`
 
 # Start your bot
 
