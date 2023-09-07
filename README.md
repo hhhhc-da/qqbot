@@ -45,7 +45,7 @@ Now ,your shell become this:
  - Install python libs by using 'pip':
 
 ```
-(qqbot)root@user:/home/user/# pip install -r requirment.txt
+(qqbot)root@user:/home/user/# pip install -r requirement.txt
 ```
 
 OK, we can use it by this command:
