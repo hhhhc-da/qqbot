@@ -133,25 +133,25 @@ Edit your config.yml
       # 可选: string,array
       post-format: array                            # Here need to fix by your bot's README
       ...
-  servers:
-    # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
-    #- http: # http 通信
-    #- ws:   # 正向 Websocket
-    #- ws-reverse: # 反向 Websocket
-    #- pprof: #性能分析服务器
-    # 反向WS设置
-    - ws-reverse:
-        # 反向WS Universal 地址
-        # 注意 设置了此项地址后下面两项将会被忽略
-        universal: ws://127.0.0.1:10219/onebot/v11/ws    # Here need to fix by your bot's README
-        # 反向WS API 地址
-        api: ws://your_websocket_api.server
-        # 反向WS Event 地址
-        event: ws://your_websocket_event.server
-        # 重连间隔 单位毫秒
-        reconnect-interval: 3000
-        middlewares:
-          <<: *default # 引用默认中间件
+    servers:
+      # 添加方式，同一连接方式可添加多个，具体配置说明请查看文档
+      #- http: # http 通信
+      #- ws:   # 正向 Websocket
+      #- ws-reverse: # 反向 Websocket
+      #- pprof: #性能分析服务器
+      # 反向WS设置
+      - ws-reverse:
+          # 反向WS Universal 地址
+          # 注意 设置了此项地址后下面两项将会被忽略
+          universal: ws://127.0.0.1:10219/onebot/v11/ws    # Here need to fix by your bot's README
+          # 反向WS API 地址
+          api: ws://your_websocket_api.server
+          # 反向WS Event 地址
+          event: ws://your_websocket_event.server
+          # 重连间隔 单位毫秒
+          reconnect-interval: 3000
+          middlewares:
+            <<: *default # 引用默认中间件
 
 OKKK, we can use it by this command:
 
