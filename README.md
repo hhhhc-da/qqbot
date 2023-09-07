@@ -160,7 +160,9 @@ OKKK, we can use it by this command:
 # Start your bot
 
 First, start qsign
+
 Second, start bot
+
 Last, start go-cqhttp
 
 # OKKKK!!!!!
