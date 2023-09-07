@@ -4,8 +4,10 @@ Help you easily create a bot with 3 repository.
 # Prepare a bot's source code
 Such as mai-bot:
 
+root@user:/home/user/bot/maibot# 
+
 {
-root@user:/home/user/bot/maibot# git clone https://github.com/Diving-Fish/mai-bot.git
+git clone https://github.com/Diving-Fish/mai-bot.git
 }
 
 (or open link 'https://github.com/Diving-Fish/mai-bot' in Chrome, 'Code' -> 'Download Zip')
