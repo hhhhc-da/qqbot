@@ -25,7 +25,7 @@ Use shell/powershell/cmd:
 ('Ctrl+Alt+T' on Linux or 'menu+R' -> 'cmd' -> 'Enter' on Windows)
 
 ```
-  root@user:/home/user/# conda create -n qqbot python=3.9
+root@user:/home/user/# conda create -n qqbot python=3.9
 ```
 
 (If you cannot use 'conda',please 'source ~/.bashrc' on Linux or check your Environment variable set on Windows)
@@ -33,25 +33,25 @@ Use shell/powershell/cmd:
  - Start python environment ( version: 3.9.x ).
 
 ```
-  root@user:/home/user/# conda activate qqbot
+root@user:/home/user/# conda activate qqbot
 ```
 
 Now ,your shell become this:
 
 ```
-  (qqbot)root@user:/home/user/# 
+(qqbot)root@user:/home/user/# 
 ```
 
  - Install python libs by using 'pip':
 
 ```
-  (qqbot)root@user:/home/user/# pip install -r requirment.txt
+(qqbot)root@user:/home/user/# pip install -r requirment.txt
 ```
 
 OK, we can use it by this command:
 
 ```
-  (qqbot)root@user:/home/user/bot/maibot# python bot.py
+(qqbot)root@user:/home/user/bot/maibot# python bot.py
 ```
 
 ## Get qsign to set up a sign server
@@ -74,7 +74,7 @@ plan B:
 (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
    
 ```
-      root@user:/home/user/bot/qsign# ./gradlew build
+root@user:/home/user/bot/qsign# ./gradlew build
 ```
 
 After this step, it become easy.
@@ -82,7 +82,7 @@ After this step, it become easy.
  - Edit config.json
 
 ```
-  root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
+root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
 ```
 
 It's look like:
@@ -113,7 +113,7 @@ Change host, such as ' "host": "127.0.0.1", ' to protect your server.
  - Write a start shell program like:
 
 ```
-  root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
+root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
 ```
 
 (or make a new 'txt' file and write 'start bin/unidbg-fetch-qsign.bat --basePath=txlib/8.9.63' then change filename to 'start.bat' on Windows, and you can execute it by double click it)
@@ -121,7 +121,7 @@ Change host, such as ' "host": "127.0.0.1", ' to protect your server.
 OKK, we can use it by this command:
 
 ```
-  root@user:/home/user/bot/qsign# bash start.sh
+root@user:/home/user/bot/qsign# bash start.sh
 ```
 
 (It's okay with graphic interface, try double click it.)
@@ -135,7 +135,7 @@ https://github.com/1umine/go-cqhttp/actions/runs/5861714722
 choose one fit your OS and unpatch it.
 
 ```
-    root@user:/home/user/bot/gocq# chmod -R 755 gocq && ./gocq
+root@user:/home/user/bot/gocq# chmod -R 755 gocq && ./gocq
 ```
 
 choose 'ws-socket' (code: 3)
@@ -187,7 +187,7 @@ choose 'ws-socket' (code: 3)
 OKKK, we can use it by this command:
 
 ```
-  root@user:/home/user/bot/gocq# ./gocq
+root@user:/home/user/bot/gocq# ./gocq
 ```
 
 ## Start your bot
