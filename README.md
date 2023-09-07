@@ -14,9 +14,9 @@ To start 'bot.py',you need a python interpreter first.
 
  - Use Chrome to open this link & download Anaconda and install.
 
-`
+```
 https://www.anaconda.com/download#downloads
-`
+```
 
 (My OS is Debian aarch64(ARM64), please check your OS)
 
@@ -24,35 +24,35 @@ Use shell/powershell/cmd:
 
 ('Ctrl+Alt+T' on Linux or 'menu+R' -> 'cmd' -> 'Enter' on Windows)
 
-`
+```
   root@user:/home/user/# conda create -n qqbot python=3.9
-`
+```
 
 (If you cannot use 'conda',please 'source ~/.bashrc' on Linux or check your Environment variable set on Windows)
 
  - Start python environment ( version: 3.9.x ).
 
-`
+```
   root@user:/home/user/# conda activate qqbot
-`
+```
 
 Now ,your shell become this:
 
-`
+```
   (qqbot)root@user:/home/user/# 
-`
+```
 
  - Install python libs by using 'pip':
 
-`
+```
   (qqbot)root@user:/home/user/# pip install -r requirment.txt
-`
+```
 
 OK, we can use it by this command:
 
-`
+```
   (qqbot)root@user:/home/user/bot/maibot# python bot.py
-`
+```
 
 ## Get qsign to set up a sign server
 In this README, qsign version is 1.1.9 
@@ -65,28 +65,28 @@ plan A:
 
     https://github.com/fuqiuluo/unidbg-fetch-qsign/releases/tag/1.1.9
 
-    Download 'unidbg-fetch-qsign.3.zip' and unpatch it with 'winrar' or other software.
+Download 'unidbg-fetch-qsign.3.zip' and unpatch it with 'winrar' or other software.
 
 plan B:
 
       root@user:/home/user/bot/qsign# git clone https://github.com/fuqiuluo/unidbg-fetch-qsign.git
 
-    (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
+(or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
    
-`
+```
       root@user:/home/user/bot/qsign# ./gradlew build
-`
+```
 
 After this step, it become easy.
 
  - Edit config.json
 
-`
+```
   root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
-`
+```
 
 It's look like:
-
+```
     {
       "server": {
         "host": "0.0.0.0",
@@ -106,43 +106,43 @@ It's look like:
         "debug": false
       }
     }
-
+```
 
 Change host, such as ' "host": "127.0.0.1", ' to protect your server.
 
  - Write a start shell program like:
 
-`
+```
   root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
-`
+```
 
 (or make a new 'txt' file and write 'start bin/unidbg-fetch-qsign.bat --basePath=txlib/8.9.63' then change filename to 'start.bat' on Windows, and you can execute it by double click it)
 
 OKK, we can use it by this command:
 
-`
+```
   root@user:/home/user/bot/qsign# bash start.sh
-`
+```
 
 (It's okay with graphic interface, try double click it.)
 
 ## Download go-cqhttp
 
-`
+```
 https://github.com/1umine/go-cqhttp/actions/runs/5861714722
-`
+```
 
 choose one fit your OS and unpatch it.
 
-`
+```
     root@user:/home/user/bot/gocq# chmod -R 755 gocq && ./gocq
-`
+```
 
 choose 'ws-socket' (code: 3)
 
  - Edit your config.yml
 
-`
+```
     account: # 账号相关
       uin: 350XXXXYYY # QQ账号                      # Here need to fix with your QQ account
       password: 'password' # 密码为空时使用扫码登录    # Here need to fix with your QQ password
@@ -182,13 +182,13 @@ choose 'ws-socket' (code: 3)
         reconnect-interval: 3000
         middlewares:
           <<: *default # 引用默认中间件
-`
+```
 
 OKKK, we can use it by this command:
 
-`
+```
   root@user:/home/user/bot/gocq# ./gocq
-`
+```
 
 ## Start your bot
 
