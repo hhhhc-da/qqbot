@@ -63,17 +63,13 @@ In this README, qsign version is 1.1.9
 
 plan A:
 
-`
     https://github.com/fuqiuluo/unidbg-fetch-qsign/releases/tag/1.1.9
-`
 
     Download 'unidbg-fetch-qsign.3.zip' and unpatch it with 'winrar' or other software.
 
 plan B:
 
-`
       root@user:/home/user/bot/qsign# git clone https://github.com/fuqiuluo/unidbg-fetch-qsign.git
-`
 
     (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
    
