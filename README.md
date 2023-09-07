@@ -4,7 +4,7 @@ Help you easily create a bot with 3 repository.
 # Prepare a bot's source code
 Such as mai-bot:
 
-root@user:/home/user/bot/maibot# git clone https://github.com/Diving-Fish/mai-bot.git
+  root@user:/home/user/bot/maibot# git clone https://github.com/Diving-Fish/mai-bot.git
 
 (or open link 'https://github.com/Diving-Fish/mai-bot' in Chrome, 'Code' -> 'Download Zip')
 
@@ -20,25 +20,25 @@ In shell/powershell/cmd:
 
 ('Ctrl+Alt+T' on Linux or 'menu+R' -> 'cmd' -> 'Enter' on Windows)
 
-root@user:/home/user/# conda create -n qqbot python=3.9
+  root@user:/home/user/# conda create -n qqbot python=3.9
 
 (If you cannot use 'conda',please 'source ~/.bashrc' on Linux or check your Environment variable set on Windows)
 
 Start python environment ( version: 3.9.x ).
 
-root@user:/home/user/# conda activate qqbot
+  root@user:/home/user/# conda activate qqbot
 
 Now ,your shell become this:
 
-(qqbot)root@user:/home/user/# 
+  (qqbot)root@user:/home/user/# 
 
 Install python libs by using 'pip':
 
-(qqbot)root@user:/home/user/# pip install -r requirment.txt
+  (qqbot)root@user:/home/user/# pip install -r requirment.txt
 
 OK, we can use it by this command:
 
-(qqbot)root@user:/home/user/bot/maibot# python bot.py
+  (qqbot)root@user:/home/user/bot/maibot# python bot.py
 
 # Get qsign to set up a sign server
 In this README, qsign version is 1.1.9 
@@ -55,15 +55,15 @@ Download qsign with this link:
 
  - plan B:
 
-    root@user:/home/user/bot/qsign# git clone https://github.com/fuqiuluo/unidbg-fetch-qsign.git
+      root@user:/home/user/bot/qsign# git clone https://github.com/fuqiuluo/unidbg-fetch-qsign.git
 
     (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
 
-    root@user:/home/user/bot/qsign# ./gradlew build
+      root@user:/home/user/bot/qsign# ./gradlew build
 
 After this step, it become easy.
 
-root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
+  root@user:/home/user/bot/qsign# vim ./txlib/8.9.63/config.json
 
 It's look like:
 
@@ -91,13 +91,13 @@ Change host, such as ' "host": "127.0.0.1", ' to protect your server.
 
 Write a start shell program like:
 
-root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
+  root@user:/home/user/bot/qsign# echo "bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.63" > start.sh && chmod -R 755 start.sh
 
-(Or make a new 'txt' file and write 'start bin/unidbg-fetch-qsign.bat --basePath=txlib/8.9.63' then change filename to 'start.bat' on Windows, and you can execute it by double click it)
+(or make a new 'txt' file and write 'start bin/unidbg-fetch-qsign.bat --basePath=txlib/8.9.63' then change filename to 'start.bat' on Windows, and you can execute it by double click it)
 
 OKK, we can use it by this command:
 
-root@user:/home/user/bot/qsign# bash start.sh
+  root@user:/home/user/bot/qsign# bash start.sh
 
 (It's okay with graphic interface, try double click it.)
 
