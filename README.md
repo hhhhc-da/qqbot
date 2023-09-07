@@ -62,6 +62,7 @@ In this README, qsign version is 1.1.9
 Download qsign with this link:
 
 `
+{
  - plan A:
 
     https://github.com/fuqiuluo/unidbg-fetch-qsign/releases/tag/1.1.9
@@ -75,6 +76,7 @@ Download qsign with this link:
     (or open link 'https://github.com/fuqiuluo/unidbg-fetch-qsign' in Chrome, 'Code' -> 'Download Zip')
 
       root@user:/home/user/bot/qsign# ./gradlew build
+}
 `
 
 
