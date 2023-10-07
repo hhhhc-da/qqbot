@@ -4,12 +4,13 @@ wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-aarch64.sh
 
 bash Anaconda3-2023.07-2-Linux-aarch64.sh
 conda create -n qqbot python=3.9 && conda activate qqbot
-pip install -r requirement.txt
 
 mkdir maibot && cd maibot
 git clone https://github.com/Diving-Fish/mai-bot.git
 
-cd ..
+cd mai-bot && pip install -r requirement.txt
+
+cd ../..
 wget https://github.com/fuqiuluo/unidbg-fetch-qsign/releases/download/1.1.9/unidbg-fetch-qsign.3.zip
 unzip unidbg-fetch-qsign.3.zip && unzip unidbg-fetch-qsign-1.1.9.zip && mv unidbg-fetch-qsign-1.1.9 qsign
 rm unidbg-fetch-qsign.3.zip unidbg-fetch-qsign-1.1.9.zip
