@@ -1,4 +1,4 @@
-# aarch64(ARM64)°æ±¾²Î¿¼
+# aarch64(ARM64)ç‰ˆæœ¬å‚è€ƒ
 mkdir bot && cd bot
 wget https://repo.anaconda.com/archive/Anaconda3-2023.07-2-Linux-aarch64.sh
 
@@ -43,5 +43,6 @@ wget https://github.com/1umine/go-cqhttp/suites/15092026034/artifacts/862161359
 unzip linux_arm64.zip && mv linux_arm64 gocq && cd gocq
 mv go-cqhttp_linux_arm64 gocq && chmod -R 755 gocq && ./gocq
 
-# ºóÃæ¾Í×Ô¼ºÅª°É
-vim config.yml
+# åé¢å°±è‡ªå·±å¼„å§
+# æ¯”å¦‚ï¼š
+# vim config.yml
